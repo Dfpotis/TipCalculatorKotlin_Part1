@@ -5,7 +5,9 @@
       <map>
         <entry key="..\:/Users/potisd22/AndroidStudioProjects/TipCalculatorKotlin_Part1/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/potisd22/AndroidStudioProjects/TipCalculator_FragmentsViewBinding/app/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/potisd22/AndroidStudioProjects/TipCalculator_FragmentsViewBinding/app/src/main/res/layout/fragment_final_total.xml" value="0.25885416666666666" />
         <entry key="..\:/Users/potisd22/AndroidStudioProjects/TipCalculator_FragmentsViewBinding/app/src/main/res/layout/fragment_main.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/potisd22/AndroidStudioProjects/TipCalculator_FragmentsViewBinding/app/src/main/res/layout/fragment_subtotal.xml" value="0.25" />
       </map>
     </option>
   </component>
