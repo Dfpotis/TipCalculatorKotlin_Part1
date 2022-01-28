@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/subtotalFragment">
+
+    <fragment
+        android:id="@+id/subtotalFragment"
+        android:name="com.potis.honorsmobileapps.tipcalculatorkotlin_part1.SubtotalFragment"
+        android:label="fragment_subtotal"
+        tools:layout="@layout/fragment_subtotal" >
+        <action
+            android:id="@+id/action_subtotalFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.potis.honorsmobileapps.tipcalculatorkotlin_part1.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_finalTotalFragment"
+            app:destination="@id/finalTotalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finalTotalFragment"
+        android:name="com.potis.honorsmobileapps.tipcalculatorkotlin_part1.FinalTotalFragment"
+        android:label="fragment_final_total"
+        tools:layout="@layout/fragment_final_total" />
+</navigation>

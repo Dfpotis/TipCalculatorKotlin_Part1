@@ -26,7 +26,6 @@
         android:text="$0.00"
         android:textColor="@color/black"
         android:textSize="25dp"
-        android:textstyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
@@ -163,6 +162,7 @@
         app:layout_constraintTop_toBottomOf="@+id/seven" />
 
     <ImageButton
+        android:id="@+id/butt"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:scaleType="centerInside"
