@@ -24,6 +24,8 @@ class MainFragment : Fragment() {
         setUpRadioButtons()
         setUpNumOfGuest()
         setUpTipSeek()
+        val args=MainFragmentArgs.fromBundle(requireArguments())
+        subtotal=args.subs
         return rootView
     }
     override fun onDestroyView(){
@@ -94,6 +96,6 @@ class MainFragment : Fragment() {
     fun setTotal(){
         finalTotal=((subtotal.toDouble())*tip).toInt()+subtotal
         binding.totalText.text=" $$finalTotal"
-        binding.tipText.text=" "+(((subtotal.toDouble())*tip).toInt()).toString()+"%"
+        binding.tipText.text=" "+(((subtotal.toDouble())*tip)).toString()+"%"
     }
 }

@@ -5,10 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <fragment
+
+    <androidx.fragment.app.FragmentContainerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/main_fragment"
-        android:name="com.potis.honorsmobileapps.tipcalculatorkotlin_part1.SubtotalFragment"/>
+        app:navGraph="@navigation/nav_graph"
+        app:defaultNavHost="true"
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

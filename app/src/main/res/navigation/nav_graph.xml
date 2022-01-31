@@ -21,6 +21,9 @@
         <action
             android:id="@+id/action_mainFragment_to_finalTotalFragment"
             app:destination="@id/finalTotalFragment" />
+        <argument
+            android:name="subs"
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/finalTotalFragment"
