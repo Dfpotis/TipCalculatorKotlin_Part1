@@ -12,9 +12,9 @@ class MainFragment : Fragment() {
     private var _binding:FragmentMainBinding? =null
     private val binding get()= _binding!!
     var tip:Double=0.0
-    var subtotal=100
+    var subtotal:Int=0
     var numGuest=0
-    var finalTotal=0
+    var finalTotal=0.0
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -25,7 +25,8 @@ class MainFragment : Fragment() {
         setUpNumOfGuest()
         setUpTipSeek()
         val args=MainFragmentArgs.fromBundle(requireArguments())
-        subtotal=args.subs
+        subtotal=(args.subs).toInt()
+        binding.number.text="$"+args.subs+".00"
         return rootView
     }
     override fun onDestroyView(){
@@ -94,8 +95,9 @@ class MainFragment : Fragment() {
         })
     }
     fun setTotal(){
-        finalTotal=((subtotal.toDouble())*tip).toInt()+subtotal
+        finalTotal=((subtotal).toDouble()*tip)+subtotal.toDouble()
+        "$%.2f".format(finalTotal)
         binding.totalText.text=" $$finalTotal"
-        binding.tipText.text=" "+(((subtotal.toDouble())*tip)).toString()+"%"
+        binding.tipText.text=" "+((tip*100).toInt()).toString()+"%"
     }
 }

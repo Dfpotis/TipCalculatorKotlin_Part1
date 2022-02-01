@@ -21,8 +21,9 @@ class SubtotalFragment : Fragment() {
 
         val rootView =binding.root
         binding.butt.setOnClickListener{
-            rootView.findNavController().navigate(R.id.action_subtotalFragment_to_mainFragment)
-            val action=SubtotalFragmentDirections.actionSubtotalFragmentToMainFragment(num.toInt())
+
+            val action=SubtotalFragmentDirections.actionSubtotalFragmentToMainFragment(num)
+            rootView.findNavController().navigate(action)
         }
         binding.one.setOnClickListener{
             num+="1"

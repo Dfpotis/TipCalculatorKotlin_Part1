@@ -23,11 +23,15 @@
             app:destination="@id/finalTotalFragment" />
         <argument
             android:name="subs"
-            app:argType="integer" />
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/finalTotalFragment"
         android:name="com.potis.honorsmobileapps.tipcalculatorkotlin_part1.FinalTotalFragment"
         android:label="fragment_final_total"
-        tools:layout="@layout/fragment_final_total" />
+        tools:layout="@layout/fragment_final_total" >
+        <argument
+            android:name="subss"
+            app:argType="string" />
+    </fragment>
 </navigation>
